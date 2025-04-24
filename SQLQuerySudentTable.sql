@@ -1,0 +1,10 @@
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    IDNumber NVARCHAR(20) NOT NULL UNIQUE,
+    BirthDate DATE,
+    Phone NVARCHAR(20),
+    Address NVARCHAR(100),
+	StartYear INT NOT NULL
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);

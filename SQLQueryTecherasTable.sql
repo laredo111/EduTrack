@@ -1,0 +1,10 @@
+CREATE TABLE Teachers (
+    TeacherID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    IDNumber NVARCHAR(20) NOT NULL UNIQUE,
+    AcademicTitle NVARCHAR(50),
+    Phone NVARCHAR(20),
+    Email NVARCHAR(100),
+    
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);

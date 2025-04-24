@@ -1,0 +1,6 @@
+CREATE TABLE Majors (
+    MajorID INT PRIMARY KEY IDENTITY(1,1),
+    MajorName NVARCHAR(100) NOT NULL,
+    Year INT NOT NULL,
+    Description NVARCHAR(255)
+);
