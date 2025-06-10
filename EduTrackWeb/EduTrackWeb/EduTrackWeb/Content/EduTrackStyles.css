@@ -1,0 +1,12 @@
+﻿body {
+}
+.dashboard-container {
+    margin: 50px;
+    direction: rtl;
+    text-align: right;
+}
+
+.dashboard-title {
+    font-size: 28px;
+    font-weight: bold;
+}
